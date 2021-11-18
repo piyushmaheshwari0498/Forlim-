@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:inset="40%"
+    tools:targetApi="lollipop">
+<animated-rotate
+    android:drawable="@drawable/loader_1"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    />
+</inset>

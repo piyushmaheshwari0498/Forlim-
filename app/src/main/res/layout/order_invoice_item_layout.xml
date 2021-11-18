@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        style="@style/PaddingMediumTextView"
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fabric_name"
+        android:textColor="@android:color/black" />
+    <TextView
+        style="@style/PaddingMediumTextView"
+        android:id="@+id/tv_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/qty"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        style="@style/PaddingMediumTextView"
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rs_250"
+        android:textColor="@android:color/black"
+        android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<TextView android:id="@+id/textViewCity"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:text="Demo"
+    style="@style/BigTextView"
+    android:textColor="@color/black"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

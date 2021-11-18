@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/menu_home"
+            />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile"
+            android:title="@string/menu_profile" />
+        <item
+            android:id="@+id/nav_order_status"
+            android:icon="@drawable/delivery_48px"
+            android:title="@string/menu_order_status" />
+        <item
+            android:id="@+id/nav_invoice"
+            android:icon="@drawable/invoice"
+            android:title="@string/menu_invoice"
+            android:visible="true"/>
+        <item
+            android:id="@+id/nav_payment_details"
+            android:icon="@drawable/payment"
+            android:title="@string/payment_details"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_sale_return"
+            android:icon="@drawable/salesreturn"
+            android:title="@string/menu_sale_return_details" />
+
+        <item
+            android:id="@+id/nav_sampling_data"
+            android:icon="@drawable/samples"
+            android:title="@string/menu_sampling_data" />
+
+        <item
+            android:id="@+id/nav_reports"
+            android:icon="@drawable/graph_48px"
+            android:title="@string/menu_reports" />
+
+        <item
+            android:id="@+id/nav_change_password"
+            android:icon="@drawable/change_password"
+            android:title="@string/change_password" />
+
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/ic_power_settings_new_black_24dp"
+            android:title="@string/logout" />
+
+       <!-- <item
+            android:id="@+id/footer_spacer_1"
+            android:checkable="false"
+            android:enabled="false"
+            android:orderInCategory="200"
+            android:title="@string/powered_by" />
+
+        <item
+            android:id="@+id/footer_spacer_2"
+            android:checkable="false"
+            android:enabled="false"
+            android:orderInCategory="200"
+            android:title="@string/interlink_consultant" />-->
+    </group>
+</menu>

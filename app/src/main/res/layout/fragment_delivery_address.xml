@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".Fragment.DeliveryAddressFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonAdd"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:gravity="start|center"
+                android:padding="10dp"
+                android:text="@string/add_delivery_address_details"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:icon="@drawable/ic_baseline_arrow_forward_ios_24"
+                app:iconGravity="end"
+                app:iconTint="@color/black" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_add_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/linearlayout_card_effect"
+                android:elevation="5dp"
+                android:nestedScrollingEnabled="true"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone"
+                tools:targetApi="lollipop">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvDeliveryDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/new_address"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" />
+
+                    <LinearLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/inputName"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center"
+                            android:gravity="start"
+                            android:hint="@string/name"
+                            app:endIconMode="clear_text"
+                            app:endIconTint="@color/black"
+                            app:errorEnabled="true"
+                            app:errorIconDrawable="@drawable/ic_baseline_error_outline_24"
+                            app:errorTextColor="@color/erorr_red"
+                            app:helperTextEnabled="true"
+                            app:hintAnimationEnabled="true"
+                            app:hintTextColor="@color/black">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top|center"
+                                android:inputType="text"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/inputNMobile"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center"
+                            android:gravity="start"
+                            android:hint="@string/mobile_number"
+                            android:textColorHint="@color/black"
+                            app:endIconMode="clear_text"
+                            app:endIconTint="@color/black"
+                            app:errorEnabled="true"
+                            app:errorIconDrawable="@drawable/ic_baseline_error_outline_24"
+                            app:errorTextColor="@color/erorr_red"
+                            app:helperTextEnabled="true"
+                            app:hintAnimationEnabled="true"
+                            app:hintTextColor="@color/black">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etMobileNo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top|center"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputAddress"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:gravity="start"
+                        android:hint="@string/address"
+                        android:textColorHint="@color/black"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/black"
+                        app:errorEnabled="true"
+                        app:errorIconDrawable="@drawable/ic_baseline_error_outline_24"
+                        app:errorTextColor="@color/erorr_red"
+                        app:helperTextEnabled="true"
+                        app:hintAnimationEnabled="true"
+                        app:hintTextColor="@color/black">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etDeliveryAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|center"
+                            android:ems="3"
+                            android:inputType="text"
+                            android:maxLength="250"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputPincode"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:gravity="start"
+                        android:hint="@string/pincode"
+                        android:textColorHint="@color/black"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/black"
+                        app:errorEnabled="true"
+                        app:errorIconDrawable="@drawable/ic_baseline_error_outline_24"
+                        app:errorTextColor="@color/erorr_red"
+                        app:helperTextEnabled="true"
+                        app:hintAnimationEnabled="true"
+                        app:hintTextColor="@color/black">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etPincode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|center"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:gravity="top|center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/LargeTextViewTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:gravity="center|left"
+                            android:text="@string/city"
+                            android:visibility="gone" />
+
+                        <!-- <Spinner
+                             android:id="@+id/spnCity"
+                             android:layout_width="0dp"
+                             android:layout_height="match_parent"
+                             android:layout_weight="0.6" />-->
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/inputspnCity"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:hint="@string/city_hint"
+                            android:textColorHint="@color/black"
+                            android:visibility="visible">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/spnCity"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:inputType="none"
+                                tools:ignore="LabelFor" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!--<TextView
+                            style="@style/LargeTextViewTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:gravity="center|left"
+                            android:text="@string/state" />
+
+                        <Spinner
+                            android:id="@+id/spnState"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.6" />-->
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/inputspnState"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:hint="@string/state_hint"
+                            android:textColorHint="@color/black"
+                            android:visibility="visible">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/spnState"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:inputType="none"
+                                tools:ignore="LabelFor" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!--<TextView
+                            style="@style/LargeTextViewTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:gravity="center|left"
+                            android:text="@string/country" />
+
+                        <Spinner
+                            android:id="@+id/spnCountry"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.6" />-->
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/inputspnCountry"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:hint="@string/country_hint"
+                            android:visibility="visible">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/spnCountry"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:inputType="none" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <!-- <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:orientation="horizontal">
+
+                         <TextView
+                             style="@style/LargeTextViewTitle"
+                             android:layout_width="0dp"
+                             android:layout_height="match_parent"
+                             android:layout_weight="0.21"
+                             android:gravity="center|left"
+                             android:text="@string/pincode" />
+
+                         <EditText
+                             android:id="@+id/etPincode"
+                             android:layout_width="0dp"
+                             android:layout_height="wrap_content"
+                             android:layout_weight="0.5"
+                             android:theme="@style/CustomEditTextStyle" />
+                     </LinearLayout>-->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/cancel_btn"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:text="@string/cancel"
+                            android:theme="@style/ButtonAppTheme"
+                            app:strokeColor="@color/colorAccent" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/save_btn"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:text="@string/save"
+                            android:theme="@style/ButtonAppTheme"
+                            app:strokeColor="@color/colorAccent" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_Data_Found"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                    android:id="@+id/swipeRefreshLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_delivery_addr"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="vertical" />
+                </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+                <!-- <TextView
+                     android:id="@+id/no_data_text"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:gravity="center"
+                     android:text="No Records Found" />-->
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_NoData_Found"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/not_data" />
+
+                <TextView
+                    android:id="@+id/no_data_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/no_internet"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/retry_btn"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/retry"
+                    android:theme="@style/ButtonAppTheme"
+                    app:strokeColor="@color/colorAccent" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fabric"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:windowSoftInputMode="adjustResize">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--<com.google.android.material.progressindicator.CircularProgressIndicator
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:indeterminate="true"
+            style="@style/Widget.App.CircularProgressIndicator"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"/>
+-->
+        <ImageView
+            android:id="@+id/forlimlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/logolight"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            style="@style/BigTextView"
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="35dp"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/mobileInputLayout"
+            app:boxStrokeColor="@color/white"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="13dp"
+            android:gravity="start"
+            android:hint="@string/mobile"
+            android:textColorHint="@color/white"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/white"
+            app:errorEnabled="true"
+            app:errorIconDrawable="@drawable/ic_baseline_error_outline_24"
+            app:helperText=""
+            app:helperTextEnabled="true"
+            app:errorTextColor="@color/erorr_red"
+            app:hintAnimationEnabled="true"
+            app:hintTextColor="@color/white"
+            app:startIconDrawable="@drawable/ic_person_black"
+            app:startIconTint="@color/white">
+            <!--  android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etMobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:text="8286850972"
+                android:autofillHints="username"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordInputLayout"
+            app:boxStrokeColor="@color/white"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="13dp"
+            android:gravity="start"
+            android:hint="@string/password"
+            android:textColorHint="@color/white"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/white"
+            app:errorEnabled="true"
+            app:errorIconDrawable="@drawable/ic_baseline_error_outline_24"
+            app:helperText=""
+            app:helperTextEnabled="true"
+            app:errorTextColor="@color/erorr_red"
+            app:hintAnimationEnabled="true"
+            app:hintTextColor="@color/white"
+            app:startIconDrawable="@drawable/ic_lock_outline_black_24dp"
+            app:startIconTint="@color/white">
+            <!--  android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:imeOptions="actionGo"
+                android:inputType="textPassword|textNoSuggestions"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:autofillHints="password"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="10dp"
+            android:text="@string/login_"
+            android:textColor="@color/white"
+            tools:text="login" />
+
+        <TextView
+            android:id="@+id/tvForgotpwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/forgot_password"
+            android:textColor="@color/white"
+            style="@style/LargeTextViewTitle"/>
+
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/still_not_connected_register"
+            android:textColor="@color/white"
+            style="@style/LargeTextViewTitle"
+            android:visibility="gone"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center|bottom"
+        android:gravity="center|bottom">
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginTop="20dp"
+            android:fontFamily="serif"
+            android:text="@string/powered_by_interlink_consultant"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+</LinearLayout>

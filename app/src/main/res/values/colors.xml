@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <color name="colorPrimary">@color/colorAccent</color>
+  <color name="colorPrimaryDark">#2E2C5E</color>
+  <color name="colorAccent">#03A9F4</color>
+  <color name="colorProcced">#FFC107</color>
+  <color name="greylight">#686568</color>
+  <color name="blue">#056997</color>
+  <color name="white_transparent">#84FFFFFF</color>
+  <color name="grey">#E1BFBF</color>
+  <color name="grey1">#A8A2A2</color>
+  <color name="grey_color">#C4F4F0F0</color>
+  <color name="light_grey_color">#20F4F0F0</color>
+  <color name="purple_200">#FFBB86FC</color>
+  <color name="purple_500">#FF6200EE</color>
+  <color name="purple_700">#FF3700B3</color>
+  <color name="teal_200">#FF03DAC5</color>
+  <color name="teal_700">#FF018786</color>
+  <color name="black">#FF000000</color>
+  <color name="white">#FFFFFFFF</color>
+  <color name="erorr_red">#F44336</color>
+  <color name="orange">#CA504F</color>
+  <color name="primary">#50ABF3</color>
+  <color name="secondary">#8B014F</color>
+  <color name="light_pink">#E85EAC</color>
+  <color name="secondary_light">#E2C8D7</color>
+  <color name="green">#0E700E</color>0
+  <color name="purpule">#363461</color>
+  <color name="lightshadegrey">#E1F5F0F0</color>
+  <color name="lavenderblush">#C7C6F1</color>
+
+  <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#FFFFFF</color>
+</resources>

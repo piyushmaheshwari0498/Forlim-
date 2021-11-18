@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/address_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_margin="10dp"
+    android:background="@drawable/address_card_edge"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="10dp"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="4dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/offer_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="4dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textview_edit"
+            style="@style/LargeTextViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/edit_address_details" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <RadioButton
+                    android:id="@+id/default_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@id/tv_name"
+                        style="@style/LargeTextViewTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:padding="5dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputName"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:gravity="start"
+                        android:hint="@string/name"
+                        android:visibility="gone"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/black"
+                        app:errorEnabled="true"
+                        app:errorIconDrawable="@drawable/ic_baseline_error_outline_24"
+                        app:errorTextColor="@color/erorr_red"
+                        app:helperTextEnabled="true"
+                        app:hintAnimationEnabled="true"
+                        app:hintTextColor="@color/black">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|center"
+                            android:inputType="text"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_mobile"
+                        style="@style/PaddingMediumTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputNMobile"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:gravity="start"
+                        android:hint="@string/mobile_number"
+                        android:textColorHint="@color/black"
+                        android:visibility="gone"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/black"
+                        app:errorEnabled="true"
+                        app:errorIconDrawable="@drawable/ic_baseline_error_outline_24"
+                        app:errorTextColor="@color/erorr_red"
+                        app:helperTextEnabled="true"
+                        app:hintAnimationEnabled="true"
+                        app:hintTextColor="@color/black">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etMobileNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|center"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        style="@style/PaddingMediumTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputAddress"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:gravity="start"
+                        android:hint="@string/address"
+                        android:textColorHint="@color/black"
+                        android:visibility="gone"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/black"
+                        app:errorEnabled="true"
+                        app:errorIconDrawable="@drawable/ic_baseline_error_outline_24"
+                        app:errorTextColor="@color/erorr_red"
+                        app:helperTextEnabled="true"
+                        app:hintAnimationEnabled="true"
+                        app:hintTextColor="@color/black">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etDeliveryAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|center"
+                            android:ems="3"
+                            android:inputType="text"
+                            android:maxLength="250"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_city"
+                        style="@style/PaddingMediumTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_state"
+                        style="@style/PaddingMediumTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_country"
+                        style="@style/PaddingMediumTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+
+                </LinearLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputPincode"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:gravity="start"
+                    android:hint="@string/pincode"
+                    android:textColorHint="@color/black"
+                    android:visibility="gone"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/black"
+                    app:errorIconDrawable="@drawable/ic_baseline_error_outline_24"
+                    app:errorTextColor="@color/erorr_red"
+                    app:hintAnimationEnabled="true"
+                    app:hintTextColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etPincode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|center"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="top|center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:visibility="gone">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/inputspnCity"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/city_hint"
+                            android:textColorHint="@color/black"
+                            android:visibility="visible">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/spnCity"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:inputType="none" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:visibility="gone">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/inputspnState"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/state_hint"
+                            android:textColorHint="@color/black"
+                            android:visibility="visible">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/spnState"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:inputType="none" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_country"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:visibility="gone">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/inputspnCountry"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/country_hint"
+                            android:visibility="visible">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/spnCountry"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:inputType="none" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+                    <!-- <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:orientation="horizontal">
+
+                         <TextView
+                             style="@style/LargeTextViewTitle"
+                             android:layout_width="0dp"
+                             android:layout_height="match_parent"
+                             android:layout_weight="0.21"
+                             android:gravity="center|left"
+                             android:text="@string/pincode" />
+
+                         <EditText
+                             android:id="@+id/etPincode"
+                             android:layout_width="0dp"
+                             android:layout_height="wrap_content"
+                             android:layout_weight="0.5"
+                             android:theme="@style/CustomEditTextStyle" />
+                     </LinearLayout>-->
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_default"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorProcced"
+                android:elevation="2dp"
+                android:paddingLeft="5dp"
+                android:text="Defualt Address"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/editView"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:elevation="2dp"
+                android:paddingLeft="5dp"
+                android:text="Edit"
+                android:textColor="@color/black"
+                app:strokeColor="@color/colorAccent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/deletebtn"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:elevation="2dp"
+                android:paddingLeft="5dp"
+                android:text="Remove"
+                android:textColor="@color/black"
+                app:strokeColor="@color/colorAccent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cancelBtn"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:elevation="2dp"
+                android:paddingLeft="5dp"
+                android:text="Cancel"
+                android:textColor="@color/black"
+                app:strokeColor="@color/colorAccent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/saveBtn"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:elevation="2dp"
+                android:paddingLeft="5dp"
+                android:text="Save"
+                android:textColor="@color/black"
+                app:strokeColor="@color/colorAccent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

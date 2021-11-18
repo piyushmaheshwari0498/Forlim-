@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardUseCompatPadding="true"
+        android:elevation="5dp"
+        card_view:cardPreventCornerOverlap="false"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="10dp"
+            android:weightSum="5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/order_no"
+                style="@style/TitleTextView"/>
+            <TextView
+                android:id="@+id/tvOrderNo"
+                android:text="fgfg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                style="@style/PaddingTitleTextView"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="@color/black"/>
+        <LinearLayout
+            android:padding="10dp"
+            android:weightSum="5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/date"
+                style="@style/MediumTextView"/>
+            <TextView
+                android:id="@+id/tvorderDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                style="@style/MediumTextView"
+                android:text="fgfd" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="@color/black"/>
+        <LinearLayout
+            android:padding="10dp"
+            android:weightSum="5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left">
+
+            <TextView
+                android:id="@+id/tvQuantityMeters"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                style="@style/MediumTextView"
+                android:text="fgdf" />
+
+            <TextView
+                android:id="@+id/tv_items"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/total_order_qty"
+                style="@style/MediumTextView"/>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="@color/black"/>
+        <LinearLayout
+            android:padding="10dp"
+            android:weightSum="12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:background="@color/grey_color">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.8"
+                android:text="Total Order Amt. :"
+                style="@style/MediumTextView" />
+            <TextView
+                android:id="@+id/tvTotalAmount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.2"
+                style="@style/MediumTextView"/>
+            <TextView
+                android:id="@+id/view_Btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/view_details"
+                android:layout_weight="4"
+                android:gravity="right"
+                style="@style/TitleTextView"
+                android:layout_gravity="right" />
+        </LinearLayout>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>
+

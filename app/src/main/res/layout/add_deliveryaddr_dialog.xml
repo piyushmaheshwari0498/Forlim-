@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+        <TextView
+            android:id="@+id/tvDeliveryDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_delivery_details"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:text="@string/name"
+                style="@style/LargeTextViewTitle"
+                android:gravity="center|left" />
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:hint=""
+                android:theme="@style/CustomEditTextStyle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:text="@string/mobile_no"
+                style="@style/LargeTextViewTitle"
+                android:gravity="center|left" />
+            <EditText
+                android:id="@+id/etMobileNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:ems="10"
+                android:hint=""
+                android:maxLength="10"
+                android:inputType="phone"
+                android:theme="@style/CustomEditTextStyle"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/delivery_address"
+            style="@style/LargeTextViewTitle"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/etDeliveryAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:maxLength="250"
+                android:maxLines="3"
+                android:hint=""
+                android:minLines="1"
+                android:text=""
+                android:theme="@style/CustomEditTextStyle"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+       android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="top|center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:text="@string/city"
+                style="@style/LargeTextViewTitle"
+                android:gravity="center|left" />
+            <Spinner
+                android:id="@+id/spnCity"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:text="@string/state"
+                style="@style/LargeTextViewTitle"
+                android:gravity="center|left" />
+            <Spinner
+                android:id="@+id/spnState"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:text="@string/country"
+                style="@style/LargeTextViewTitle"
+                android:gravity="center|left"
+                />
+            <Spinner
+                android:id="@+id/spnCountry"
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.21"
+                android:text="@string/pincode"
+                style="@style/LargeTextViewTitle"
+                android:gravity="center|left" />
+
+            <EditText
+                android:id="@+id/etPincode"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:theme="@style/CustomEditTextStyle"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/save"
+            android:theme="@style/ButtonAppTheme"
+            android:background="@drawable/circle" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            app:contentInsetStartWithNavigation="0dp"
+            app:titleMarginStart="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@color/white"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            app:layout_scrollFlags="scroll|enterAlways" >
+
+            <ImageView
+                android:id="@+id/imageViewIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start|center"
+                android:gravity="center"
+
+                />
+
+            <TextView
+                android:id="@+id/mTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start|center"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                />
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <!--    <androidx.appcompat.widget.Toolbar
+               android:id="@+id/toolbar"
+               android:layout_width="match_parent"
+               android:layout_height="?attr/actionBarSize"
+               app:titleTextColor="@color/black"
+               app:popupTheme="@style/AppTheme.PopupOverlay"
+               app:titleTextAppearance="@style/Toolbar.TitleText"
+               app:theme="@style/MyActionBarTheme"/>-->

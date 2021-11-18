@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="5dp"
+    android:layout_margin="5dp"
+    card_view:contentPadding="10dp"
+    card_view:cardPreventCornerOverlap="false"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_order_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/PaddingMediumTextView"
+            android:layout_gravity="end"
+            android:textColor="@color/greylight"
+            android:gravity="end"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text="@string/invoice_no"
+                android:padding="5dp"
+                android:textSize="18sp"
+                style="@style/TitleTextView" />
+            <TextView
+                android:id="@+id/tv_order_id"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="18sp"
+                style="@style/PaddingTitleTextView"/>
+        </LinearLayout>
+       <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text="@string/invoice_date"
+                style="@style/PaddingMediumTV" />
+            <TextView
+                android:id="@+id/tv_order_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="gf"
+                style="@style/PaddingMediumTextView"/>
+        </LinearLayout>-->
+
+        <RelativeLayout
+            android:id="@+id/rr1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/PaddingMediumTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fabric_name" />
+
+            <TextView
+                style="@style/PaddingMediumTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/qty_mtrs" />
+
+            <TextView
+                style="@style/PaddingMediumTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/price" />
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ll_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/border_line">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            <TextView
+                android:id="@+id/tvBillDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="@string/bill_details"
+                style="@style/PaddingMediumTV"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="@string/total_taxable"
+                style="@style/PaddingMediumTextView" />
+            <TextView
+                android:id="@+id/tv_taxable_amt"
+                android:text="dfd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/PaddingMediumTextView"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="@string/cgst"
+                style="@style/PaddingMediumTextView"/>
+            <TextView
+                android:id="@+id/tv_cgst"
+                android:text="dfg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/PaddingMediumTextView"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="@string/sgst"
+               style="@style/PaddingMediumTextView"/>
+            <TextView
+                android:id="@+id/tv_sgst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="gfgfd"
+                style="@style/PaddingMediumTextView"  />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/grand_total"
+                style="@style/PaddingMediumTextView" />
+            <TextView
+                android:id="@+id/tv_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fd"
+                style="@style/PaddingMediumTextView"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+        <RelativeLayout
+            android:id="@+id/rr3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/download_invoice"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/invoiceblack" />
+
+            <TextView
+                android:id="@+id/tvInvoice"
+                style="@style/PaddingMediumTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/download_invoice"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/invoice" />
+
+            <TextView
+                android:id="@+id/tvPayNow"
+                style="@style/PaddingMediumTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/arrow_btn"
+                android:background="@drawable/corner"
+                android:text="@string/pay_now" />
+            <ImageView
+                android:id="@+id/arrow_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ic_baseline_keyboard_arrow_right_24" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

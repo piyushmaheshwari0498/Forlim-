@@ -1,0 +1,1094 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:theme="@style/MyAppTheme"
+    tools:context=".Activity.DeliveryAddressActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/editView"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="25dp"
+            android:elevation="2dp"
+            android:text="Edit"
+            android:textColor="@color/black" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:elevation="8dp"
+            android:gravity="center"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:gravity="top|center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/customer_details" />
+
+                    <TextView
+                        android:id="@+id/tvCustomer"
+                        style="@style/BigTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/customer_details"
+                        android:textSize="18sp"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/LargeTextViewTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:text="C / O :"
+                        android:textSize="12sp" />
+
+                    <com.elyeproj.loaderviewlibrary.LoaderTextView
+                        android:id="@+id/tvcustomerName"
+                        style="@style/LargeTextViewTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center|left"
+                        android:text="fsdfsdf"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputcustomerName"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:gravity="start"
+                        android:hint="@string/customer_name"
+                        android:textColorHint="@color/black"
+                        android:visibility="gone"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/black"
+                        app:errorEnabled="true"
+                        app:errorIconDrawable="@drawable/ic_baseline_error_outline_24"
+                        app:errorTextColor="@color/erorr_red"
+                        app:helperTextEnabled="true"
+                        app:hintAnimationEnabled="true"
+                        app:hintTextColor="@color/black">
+                        <!--  android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etcustomerName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|center"
+                            android:inputType="text"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.elyeproj.loaderviewlibrary.LoaderTextView
+                        android:id="@+id/tv_contact_name"
+                        style="@style/PaddingMediumTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:gravity="center|left"
+                        android:padding="5dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputetcontactPerson"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:gravity="start"
+                        android:hint="@string/contact_person"
+                        android:textColorHint="@color/black"
+                        android:visibility="gone"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/black"
+                        app:errorEnabled="true"
+                        app:errorIconDrawable="@drawable/ic_baseline_error_outline_24"
+                        app:errorTextColor="@color/erorr_red"
+                        app:helperTextEnabled="true"
+                        app:hintAnimationEnabled="true"
+                        app:hintTextColor="@color/black">
+                        <!--  android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etcontactPerson"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|center"
+                            android:inputType="text"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.elyeproj.loaderviewlibrary.LoaderTextView
+                        android:id="@+id/tv_contact_no"
+                        style="@style/PaddingMediumTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:gravity="center|left"
+                        android:padding="5dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputetmobileNo"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:gravity="start"
+                        android:hint="@string/mobile_number"
+                        android:textColorHint="@color/black"
+                        android:visibility="gone"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/black"
+                        app:errorEnabled="true"
+                        app:errorIconDrawable="@drawable/ic_baseline_error_outline_24"
+                        app:errorTextColor="@color/erorr_red"
+                        app:helperTextEnabled="true"
+                        app:hintAnimationEnabled="true"
+                        app:hintTextColor="@color/black">
+                        <!--  android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etmobileNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|center"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.elyeproj.loaderviewlibrary.LoaderTextView
+                        android:id="@+id/tv_telephone_1"
+                        style="@style/PaddingMediumTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+
+                        android:gravity="center|left"
+                        android:padding="5dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputettelephoneNo1"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:gravity="start"
+                        android:hint="@string/telephone_no_1"
+                        android:textColorHint="@color/black"
+                        android:visibility="gone"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/black"
+                        app:errorEnabled="true"
+                        app:errorIconDrawable="@drawable/ic_baseline_error_outline_24"
+                        app:errorTextColor="@color/erorr_red"
+                        app:helperTextEnabled="true"
+                        app:hintAnimationEnabled="true"
+                        app:hintTextColor="@color/black">
+                        <!--  android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ettelephoneNo1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|center"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.elyeproj.loaderviewlibrary.LoaderTextView
+                        android:id="@+id/tv_telephone_2"
+                        style="@style/PaddingMediumTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+
+                        android:gravity="center|left"
+                        android:padding="5dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputettelephoneNo2"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:gravity="start"
+                        android:hint="@string/telephone_no_2"
+                        android:textColorHint="@color/black"
+                        android:visibility="gone"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/black"
+                        app:errorEnabled="true"
+                        app:errorIconDrawable="@drawable/ic_baseline_error_outline_24"
+                        app:errorTextColor="@color/erorr_red"
+                        app:helperTextEnabled="true"
+                        app:hintAnimationEnabled="true"
+                        app:hintTextColor="@color/black">
+                        <!--  android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ettelephoneNo2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|center"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.elyeproj.loaderviewlibrary.LoaderTextView
+                        android:id="@+id/tv_whatsapp"
+                        style="@style/PaddingMediumTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:gravity="center|left"
+                        android:padding="5dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputetwhatsappNo"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:gravity="start"
+                        android:hint="@string/whatsapp_no"
+                        android:textColorHint="@color/black"
+                        android:visibility="gone"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/black"
+                        app:errorEnabled="true"
+                        app:errorIconDrawable="@drawable/ic_baseline_error_outline_24"
+                        app:errorTextColor="@color/erorr_red"
+                        app:helperTextEnabled="true"
+                        app:hintAnimationEnabled="true"
+                        app:hintTextColor="@color/black">
+                        <!--  android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etwhatsappNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|center"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.elyeproj.loaderviewlibrary.LoaderTextView
+                        android:id="@+id/tv_website"
+                        style="@style/PaddingMediumTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:gravity="center|left"
+                        android:padding="5dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputetwebsite"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:gravity="start"
+                        android:hint="@string/website"
+                        android:textColorHint="@color/black"
+                        android:visibility="gone"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/black"
+                        app:errorEnabled="true"
+                        app:errorIconDrawable="@drawable/ic_baseline_error_outline_24"
+                        app:errorTextColor="@color/erorr_red"
+                        app:helperTextEnabled="true"
+                        app:hintAnimationEnabled="true"
+                        app:hintTextColor="@color/black">
+                        <!--  android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etwebsite"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|center"
+                            android:inputType="textUri"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.elyeproj.loaderviewlibrary.LoaderTextView
+                        android:id="@+id/tv_pan"
+                        style="@style/PaddingMediumTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+
+                        android:gravity="center|left"
+                        android:padding="5dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputetpan"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:gravity="start"
+                        android:hint="@string/pan"
+                        android:textColorHint="@color/black"
+                        android:visibility="gone"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/black"
+                        app:errorEnabled="true"
+                        app:errorIconDrawable="@drawable/ic_baseline_error_outline_24"
+                        app:errorTextColor="@color/erorr_red"
+                        app:helperTextEnabled="true"
+                        app:hintAnimationEnabled="true"
+                        app:hintTextColor="@color/black">
+                        <!--  android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etpan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|center"
+                            android:inputType="textCapCharacters"
+                            android:maxLength="10"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:background="@color/grey_color" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="10dp"
+            android:gravity="center"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:gravity="top|center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/billing_addres" />
+
+                        <TextView
+                            android:id="@+id/tvBilling"
+                            style="@style/BigTitle"
+                            android:layout_marginStart="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/billing_address"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/LargeTextViewTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3"
+                            android:gravity="center|left"
+                            android:text="@string/customer_type" />
+
+                        <TextView
+                            android:id="@+id/tvCustomerType"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center|left"
+                            android:theme="@style/CustomEditTextStyle"
+                            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+                    </LinearLayout>
+
+                    <com.elyeproj.loaderviewlibrary.LoaderTextView
+                        android:id="@+id/tv_address"
+                        style="@style/PaddingMediumTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:padding="5dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/inputetaddress"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center"
+                            android:gravity="start"
+                            android:hint="@string/address"
+                            android:textColorHint="@color/black"
+                            android:visibility="gone"
+                            app:endIconMode="clear_text"
+                            app:endIconTint="@color/black"
+                            app:errorEnabled="true"
+                            app:errorIconDrawable="@drawable/ic_baseline_error_outline_24"
+                            app:errorTextColor="@color/erorr_red"
+                            app:helperTextEnabled="true"
+                            app:hintAnimationEnabled="true"
+                            app:hintTextColor="@color/black">
+                            <!--  android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etBillingAddr"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top|center"
+                                android:inputType="textPostalAddress"
+                                android:maxLength="250"
+                                android:maxLines="3"
+                                android:minLines="1"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.elyeproj.loaderviewlibrary.LoaderTextView
+                            android:id="@+id/tv_city"
+                            style="@style/MediumTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3"
+                            android:gravity="center|left"
+                            android:padding="5dp" />
+
+                        <!-- <Spinner
+                             android:id="@+id/spCity"
+                             android:layout_width="0dp"
+                             android:layout_height="match_parent"
+                             android:layout_weight="0.6"
+                             android:visibility="gone" />-->
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/inputSpCity"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="City">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/spCity"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:inputType="none" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.elyeproj.loaderviewlibrary.LoaderTextView
+                            android:id="@+id/tv_state"
+                            style="@style/MediumTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3"
+                            android:gravity="center|left"
+                            android:padding="5dp"
+                            android:textColorHint="@color/black" />
+
+                        <!-- <Spinner
+                             android:id="@+id/spState"
+                             android:layout_width="0dp"
+                             android:layout_height="match_parent"
+                             android:layout_weight="0.6"
+                             android:visibility="gone" />-->
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/inputspState"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:hint="State"
+                            android:textColorHint="@color/black"
+                            android:visibility="gone">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/spState"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:inputType="none" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.elyeproj.loaderviewlibrary.LoaderTextView
+                            android:id="@+id/tv_country"
+                            style="@style/MediumTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3"
+                            android:gravity="center|left"
+                            android:padding="5dp" />
+
+                        <!-- <Spinner
+                             android:id="@+id/spCountry"
+                             android:layout_width="0dp"
+                             android:layout_height="match_parent"
+                             android:layout_weight="0.6"
+                             android:visibility="gone" />-->
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/inputspCountry"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:hint="Country"
+                            android:textColorHint="@color/black"
+                            android:visibility="gone">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/spCountry"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:inputType="none" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/inputetpincode"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center"
+                            android:layout_marginTop="5dp"
+                            android:gravity="start"
+                            android:hint="@string/pincode"
+                            android:textColorHint="@color/black"
+                            android:visibility="gone"
+                            app:endIconMode="clear_text"
+                            app:endIconTint="@color/black"
+                            app:errorEnabled="true"
+                            app:errorIconDrawable="@drawable/ic_baseline_error_outline_24"
+                            app:errorTextColor="@color/erorr_red"
+                            app:helperTextEnabled="true"
+                            app:hintAnimationEnabled="true"
+                            app:hintTextColor="@color/black">
+                            <!--  android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etPincode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top|center"
+                                android:inputType="number"
+                                android:maxLength="6"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.elyeproj.loaderviewlibrary.LoaderTextView
+                            android:id="@+id/tv_gst"
+                            style="@style/MediumTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3"
+                            android:gravity="center|left"
+                            android:padding="5dp" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/inputetgst"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center"
+                            android:gravity="start"
+                            android:hint="@string/gst_no"
+                            android:textColorHint="@color/black"
+                            android:visibility="gone"
+                            app:endIconMode="clear_text"
+                            app:endIconTint="@color/black"
+                            app:errorEnabled="true"
+                            app:errorIconDrawable="@drawable/ic_baseline_error_outline_24"
+                            app:errorTextColor="@color/erorr_red"
+                            app:helperTextEnabled="true"
+                            app:hintAnimationEnabled="true"
+                            app:hintTextColor="@color/black">
+                            <!--  android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/gstNo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top|center"
+                                android:inputType="textCapWords"
+                                android:maxLength="16"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ll_bank_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:elevation="8dp"
+            android:gravity="center"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:gravity="top|center"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/bank_details" />
+
+                    <TextView
+                        android:layout_marginStart="5dp"
+                        android:id="@+id/tvBank"
+                        style="@style/BigTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bank_details"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.elyeproj.loaderviewlibrary.LoaderTextView
+                        android:id="@+id/tv_bank_name"
+                        style="@style/PaddingMediumTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:gravity="center|left"
+                        android:padding="5dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputetbanname"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:gravity="start"
+                        android:hint="@string/bank_name"
+                        android:textColorHint="@color/black"
+                        android:visibility="gone"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/black"
+                        app:errorEnabled="true"
+                        app:errorIconDrawable="@drawable/ic_baseline_error_outline_24"
+                        app:errorTextColor="@color/erorr_red"
+                        app:helperTextEnabled="true"
+                        app:hintAnimationEnabled="true"
+                        app:hintTextColor="@color/black">
+                        <!--  android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/bankName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|center"
+                            android:inputType="text"
+                            android:maxLength="25"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.elyeproj.loaderviewlibrary.LoaderTextView
+                        android:id="@+id/tv_acc_name"
+                        style="@style/PaddingMediumTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:gravity="center|left"
+                        android:padding="5dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputetaccoutnnum"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:gravity="start"
+                        android:hint="@string/account_name"
+                        android:textColorHint="@color/black"
+                        android:visibility="gone"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/black"
+                        app:errorEnabled="true"
+                        app:errorIconDrawable="@drawable/ic_baseline_error_outline_24"
+                        app:errorTextColor="@color/erorr_red"
+                        app:helperTextEnabled="true"
+                        app:hintAnimationEnabled="true"
+                        app:hintTextColor="@color/black">
+                        <!--  android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/accountName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|center"
+                            android:inputType="text"
+                            android:maxLength="25"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.elyeproj.loaderviewlibrary.LoaderTextView
+                        android:id="@+id/tv_acc_no"
+                        style="@style/PaddingMediumTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:padding="5dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputetaccno"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:gravity="start"
+                        android:hint="@string/account_no"
+                        android:textColorHint="@color/black"
+                        android:visibility="gone"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/black"
+                        app:errorEnabled="true"
+                        app:errorIconDrawable="@drawable/ic_baseline_error_outline_24"
+                        app:errorTextColor="@color/erorr_red"
+                        app:helperTextEnabled="true"
+                        app:hintAnimationEnabled="true"
+                        app:hintTextColor="@color/black">
+                        <!--  android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/accountNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|center"
+                            android:inputType="number"
+                            android:maxLength="18"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.elyeproj.loaderviewlibrary.LoaderTextView
+                        android:id="@+id/tv_branch_name"
+                        style="@style/PaddingMediumTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:gravity="center|left"
+                        android:padding="5dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputetbranchname"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:gravity="start"
+                        android:hint="@string/branch_name"
+                        android:textColorHint="@color/black"
+                        android:visibility="gone"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/black"
+                        app:errorEnabled="true"
+                        app:errorIconDrawable="@drawable/ic_baseline_error_outline_24"
+                        app:errorTextColor="@color/erorr_red"
+                        app:helperTextEnabled="true"
+                        app:hintAnimationEnabled="true"
+                        app:hintTextColor="@color/black">
+                        <!--  android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/branchName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|center"
+                            android:inputType="text"
+                            android:maxLength="25"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.elyeproj.loaderviewlibrary.LoaderTextView
+                        android:id="@+id/tv_ifsc_code"
+                        style="@style/PaddingMediumTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:gravity="center|left"
+                        android:padding="5dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputetifsc"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:gravity="start"
+                        android:hint="@string/ifsc_code"
+                        android:textColorHint="@color/black"
+                        android:visibility="gone"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/black"
+                        app:errorEnabled="true"
+                        app:errorIconDrawable="@drawable/ic_baseline_error_outline_24"
+                        app:errorTextColor="@color/erorr_red"
+                        app:helperTextEnabled="true"
+                        app:hintAnimationEnabled="true"
+                        app:hintTextColor="@color/black">
+                        <!--  android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ifscCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|center"
+                            android:inputType="textCapCharacters"
+                            android:maxLength="11"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_cancel"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorProcced"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_Save"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorProcced"
+                android:gravity="center"
+                android:text="@string/save_chnages"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />-->
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

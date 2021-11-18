@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.HomeFragment"
+    android:orientation="vertical">
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+    <SearchView
+        android:id="@+id/btnsearch"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:queryHint="Search Here"
+        android:background="@drawable/textbox_bg_dark"
+        android:iconifiedByDefault="false"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="25dp"
+             android:layout_gravity="center_vertical"
+             android:layout_marginLeft="5dp"
+             android:background="@drawable/ic_filter_list_black_24dp" />
+         <TextView
+           android:id="@+id/tvFilter"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:padding="5dp"
+           android:singleLine="true"
+           android:layout_gravity="center_vertical"
+           android:text="Filter"
+           android:textSize="14sp"
+           android:textStyle="bold" />
+     </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/orders_rV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+</LinearLayout>

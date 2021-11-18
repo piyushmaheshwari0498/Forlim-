@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Billing Details"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+    <View
+        android:layout_width="260dp"
+        android:layout_height="20dp"/>
+    <ImageView
+        android:id="@+id/editView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/ic_edit_button"
+        android:textColor="#000" />
+    </LinearLayout>
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Billing Details"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:textSize="16sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="top|center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Billing Address"
+            android:layout_marginTop="5dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/etBillingAddr"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:gravity="top"
+                android:hint=""
+                android:inputType="textMultiLine"
+                android:maxLength="250"
+                android:maxLines="3"
+                android:minLines="1"
+                android:text="" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="top|center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Customer Type :"
+                android:gravity="center|left"
+                android:textStyle="bold" />
+            <Spinner
+                android:id="@+id/spCustomerType"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="9dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="City :"
+                android:gravity="center|left"
+                android:textStyle="bold" />
+            <Spinner
+                android:id="@+id/spCity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="80dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="State :"
+                android:gravity="center|left"
+                android:textStyle="bold" />
+            <Spinner
+                android:id="@+id/spState"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="72dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Country :"
+                android:gravity="center|left"
+                android:textStyle="bold"
+                />
+            <Spinner
+                android:id="@+id/spCountry"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="55dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Pincode :"
+                android:gravity="center|left"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/etPincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:inputType="number"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:text="GST No :"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/gstNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="58dp"
+                android:inputType="number" />
+        </LinearLayout>
+    </LinearLayout>-->

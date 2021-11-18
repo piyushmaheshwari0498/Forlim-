@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginBottom="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            style="@style/LargeTextViewTitle"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:padding="8dp"
+            android:text="Filter"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:gravity="start"
+           />
+
+        <TextView
+            android:id="@+id/apply_filter"
+            style="@style/LargeTextViewTitle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:text="@string/apply"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            style="@style/BigTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:padding="8dp"
+            android:text="Sort By Art Name : "
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:typeface="serif"/>
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/option_1"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A -> Z" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/option_2"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Z -> A" />
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            style="@style/BigTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:padding="8dp"
+            android:text="Sort By Price : "
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:typeface="serif"/>
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/group_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/option_high_pice"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HIgh -> Low" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/option_low_price"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Low -> High" />
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="start"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:weightSum="2">
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchAB"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:text="Price"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            app:switchTextAppearance="@style/BrandedSwitch.text"
+            app:theme="@style/BrandedSwitch.control"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:theme="@style/Color1SwitchStyle"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+Forlim Popoli
+
+v1.5
+- Bug in calculation, Customer Credit limit is not getting subtracted when order gets confired
+- Bug in calculation, Customer Credit Limit is not getting added when their Sale return
+- Profile UI is not still proper Compnay Name is small, No icons should be large text of company
+- Invoice no is getting fetch but Order no is not getting fetch in Invoice Page
+- Inovice PDF their no order number for refrence purpose
+- Sale return rate is getting fetch wrong, it should fetch fetch as per the product offer price / selling price
+- Reports are getting not proper, need to change API as per the new requierment
+
+v1.6
+- Bug fix for Home page Credit Balance
+- Showing Proper Pending Balance Payable Balance
