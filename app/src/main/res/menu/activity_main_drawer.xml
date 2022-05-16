@@ -16,11 +16,12 @@
         <item
             android:id="@+id/nav_order_status"
             android:icon="@drawable/delivery_48px"
-            android:title="@string/menu_order_status" />
+            android:title="@string/menu_order_status"
+            android:visible="false"/>
         <item
             android:id="@+id/nav_invoice"
             android:icon="@drawable/invoice"
-            android:title="@string/menu_invoice"
+            android:title="@string/menu_invoice2"
             android:visible="true"/>
         <item
             android:id="@+id/nav_payment_details"
@@ -46,6 +47,11 @@
             android:id="@+id/nav_change_password"
             android:icon="@drawable/change_password"
             android:title="@string/change_password" />
+
+        <item
+            android:id="@+id/nav_terms"
+            android:icon="@drawable/terms"
+            android:title="@string/menu_policy" />
 
         <item
             android:id="@+id/nav_exit"

@@ -7,8 +7,7 @@
     android:fillViewport="true"
     android:theme="@style/MyAppTheme"
     tools:context=".Activity.DeliveryAddressActivity">
-
-
+    
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -85,14 +84,13 @@
                         android:text="C / O :"
                         android:textSize="12sp" />
 
-                    <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    <TextView
                         android:id="@+id/tvcustomerName"
                         style="@style/LargeTextViewTitle"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="3"
                         android:gravity="center|left"
-                        android:text="fsdfsdf"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="20sp" />
 
@@ -132,7 +130,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    <TextView
                         android:id="@+id/tv_contact_name"
                         style="@style/PaddingMediumTV"
                         android:layout_width="0dp"
@@ -176,7 +174,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    <TextView
                         android:id="@+id/tv_contact_no"
                         style="@style/PaddingMediumTV"
                         android:layout_width="0dp"
@@ -221,7 +219,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    <TextView
                         android:id="@+id/tv_telephone_1"
                         style="@style/PaddingMediumTV"
                         android:layout_width="0dp"
@@ -267,7 +265,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    <TextView
                         android:id="@+id/tv_telephone_2"
                         style="@style/PaddingMediumTV"
                         android:layout_width="0dp"
@@ -313,7 +311,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    <TextView
                         android:id="@+id/tv_whatsapp"
                         style="@style/PaddingMediumTV"
                         android:layout_width="0dp"
@@ -358,7 +356,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    <TextView
                         android:id="@+id/tv_website"
                         style="@style/PaddingMediumTV"
                         android:layout_width="0dp"
@@ -403,7 +401,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    <TextView
                         android:id="@+id/tv_pan"
                         style="@style/PaddingMediumTV"
                         android:layout_width="0dp"
@@ -521,7 +519,7 @@
                             tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
                     </LinearLayout>
 
-                    <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    <TextView
                         android:id="@+id/tv_address"
                         style="@style/PaddingMediumTV"
                         android:layout_width="match_parent"
@@ -573,7 +571,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <com.elyeproj.loaderviewlibrary.LoaderTextView
+                        <TextView
                             android:id="@+id/tv_city"
                             style="@style/MediumTextView"
                             android:layout_width="0dp"
@@ -611,7 +609,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <com.elyeproj.loaderviewlibrary.LoaderTextView
+                        <TextView
                             android:id="@+id/tv_state"
                             style="@style/MediumTextView"
                             android:layout_width="0dp"
@@ -652,7 +650,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <com.elyeproj.loaderviewlibrary.LoaderTextView
+                        <TextView
                             android:id="@+id/tv_country"
                             style="@style/MediumTextView"
                             android:layout_width="0dp"
@@ -730,7 +728,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <com.elyeproj.loaderviewlibrary.LoaderTextView
+                        <TextView
                             android:id="@+id/tv_gst"
                             style="@style/MediumTextView"
                             android:layout_width="0dp"
@@ -825,7 +823,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    <TextView
                         android:id="@+id/tv_bank_name"
                         style="@style/PaddingMediumTV"
                         android:layout_width="0dp"
@@ -871,7 +869,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    <TextView
                         android:id="@+id/tv_acc_name"
                         style="@style/PaddingMediumTV"
                         android:layout_width="0dp"
@@ -917,7 +915,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    <TextView
                         android:id="@+id/tv_acc_no"
                         style="@style/PaddingMediumTV"
                         android:layout_width="0dp"
@@ -962,7 +960,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    <TextView
                         android:id="@+id/tv_branch_name"
                         style="@style/PaddingMediumTV"
                         android:layout_width="0dp"
@@ -1008,7 +1006,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    <TextView
                         android:id="@+id/tv_ifsc_code"
                         style="@style/PaddingMediumTV"
                         android:layout_width="0dp"
@@ -1064,11 +1062,11 @@
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
-                android:backgroundTint="@color/colorProcced"
+                android:backgroundTint="@color/black"
                 android:gravity="center"
                 android:text="@string/cancel"
                 android:textAllCaps="false"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="15sp" />
 
             <com.google.android.material.button.MaterialButton
@@ -1083,7 +1081,7 @@
                 android:gravity="center"
                 android:text="@string/save_chnages"
                 android:textAllCaps="false"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="15sp" />
         </LinearLayout>
 

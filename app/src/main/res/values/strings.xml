@@ -1,17 +1,18 @@
-<resources>
-    <string name="app_name">Forlem Popoli</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Forlim Popoli</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-    <string name="app_title">FORLEM POPOLI</string>
+    <string name="app_title">@string/app_name</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_profile">Profile</string>
     <string name="menu_order_status">Orders</string>
     <string name="menu_invoice">Invoice</string>
+    <string name="menu_invoice2">Order/Invoice</string>
     <string name="menu_sale_return_details">Sale Return</string>
     <string name="menu_payment">Payment Details</string>
     <string name="menu_sampling_data">Fabric Samples</string>
@@ -19,7 +20,7 @@
     <string name="menu_exit">Exit</string>
 
     <string name="payment_details">Payment Details</string>
-    <string name="no_internet">You\'re offline. \n Check Internet Connection.</string>
+    <string name="no_internet">You\'re offline.\nCheck Internet Connection.</string>
     <string name="no_record_found">No Result Found. \n Try a more general keyword.</string>
     <string name="data_not_found">Data Not Found.</string>
     <string name="image_not_found">Image Not Available</string>
@@ -28,6 +29,7 @@
     <string name="button_continue">Continue</string>
     <string name="share">share</string>
     <string name="credit_days">Credit</string>
+    <string name="Rs">\u20B9</string>
 
     <string name="login">Login</string>
     <string name="enter_your_mobile_no">Enter your mobile no.</string>
@@ -124,7 +126,7 @@
     <string name="company_name">Company Name</string>
     <string name="owner_name">Owner Name</string>
     <string name="email">Email</string>
-    <string name="something_wrong">Something Worng! \nPlease Try again Later.</string>
+    <string name="something_wrong">Something Wrong!\nPlease Try again Later.</string>
     <string name="contact_admin">Please Contact Administrator.</string>
     <string name="added_cart">Added to cart</string>
     <string name="not_addedd_cart">Not added into cart.\nPlease try later</string>
@@ -139,7 +141,7 @@
     <string name="state_hint">State</string>
     <string name="country_hint">Country</string>
     <string name="continue_shopping">Continue Shopping</string>
-    <string name="it_s_good_day_to_buy">It\'s good day to buy.</string>
+    <string name="it_s_good_day_to_buy">Its good day to buy.</string>
     <string name="your_cart_is_empty">Your cart is empty!</string>
     <string name="confirm_password_tv">Confirm Password</string>
     <string name="forgot_password_yv">Forgot Password</string>
@@ -159,6 +161,501 @@
     <string name="search_article">Search Article</string>
     <string name="todo">TODO</string>
     <string name="apply"><u>Apply</u></string>
+    <string name="stop_scanning">Stop Scanning</string>
+    <string name="design_number">Design No.</string>
+    <string name="orderqty">QTY</string>
+    <string name="rate">Rate</string>
+    <string name="amount">Amount</string>
+    <string name="note">Note</string>
+    <string name="addtocart">Add to cart</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="delivery_add">Delivery Address</string>
+    <string name="your_order">Your Order</string>
+    <string name="order_details">Order Details</string>
+    <string name="order_amount">Order Amount</string>
+    <string name="paymnet_cancel_hint">Cancel Payment</string>
+
+    <string name="text_generated_file_error">Generated File is null or does not exist!</string>
+
+
+    <string name="about_header">CLOUD 9 FASHION Offer a Comprehensive selection of fabrics!CLOUD 9 FASHION Offer a Comprehensive selection of fabrics!</string>
+    <string name="about_content" tools:ignore="StringEscaping">
+        \nCLOUD 9 FASHION its all about enticing fabrics that is
+        now a part of common man life. Establish by a common man like you and ME, who understand the customers requirements and
+        the day to day, Know how about this consumer and our product is our customers confidant and companion as they
+        embark on their own journey to discover their unique identity and personal style. From the
+        application selection of genuine product from across the globe, we are truly passionate to
+        catering to your every need and comfort.So, please allow us to help you Buy More, Save More!!
+</string>
+
+    <string name="contact_header">Contact Us</string>
+    <string name="contact_content">
+        \n<b>LEGAL NAME:</b>\n
+        CLOUD 9 FASHION\n
+        \n<b>REGISTRATION NUMBER:</b>\n
+        27AAIFC7360F1ZF\n
+        \n<b>LOCATION:</b>\n
+        G-10 PRASAD CHEMBER OPERA HOUSE, Mumbai, Mumbai City,\n
+        Maharashtra 400004\n
+        \n<b>EMAIL:</b>\n
+        paragshah0802@gmail.com
+</string>
+
+    <string name="disclaimer_header">DISCLAIMER</string>
+    <string name="disclaimer_content">
+       \n <b>WEBSITE DISCLAIMER</b>\n
+The information provided by CLOUD 9 FASHION (“Company”, “we”, “our”, “us”) is
+        for general informational purposes only.
+Under no circumstance shall we have any liability to you for any loss or damage of any kind incurred as a result of
+        the use of the site or reliance on any information provided on the site. Your use of the site and your
+        reliance on any information on the site is solely at your own risk.\n
+       \n <b>EXTERNAL LINKS DISCLAIMER</b>\n
+The Site may contain (or you may be sent through the Site) links to other websites or content belonging to or originating from third parties or links to websites and features. Such external links are not investigated, monitored, or checked for accuracy, adequacy, validity, reliability, availability or completeness by us.
+For example, the outlined Disclaimer has been created using PolicyMaker.io, a free web application for generating high-quality legal documents. Policymaker’s free website disclaimer generator is an easy-to-use tool for creating an excellent sample Disclaimer template for a website, blog, e-commerce store or app.
+We do not warrant, endorse, guarantee, or assume responsibility for the accuracy or reliability of any
+        information offered by third-party websites linked through the site or any website or feature linked
+        in any banner or other advertising. We will not be a party to or in any way be responsible for monitoring
+        any transaction between you and third-party providers of products or services.\n
+        \n<b>AFFILIATES DISCLAIMER</b>\n
+The Site may contain links to affiliate websites, and we may receive an affiliate commission for any purchases or
+        actions made by you on the affiliate websites using such links.\n
+        \n<b>TESTIMONIALS DISCLAIMER</b>\n
+The Site may contain testimonials by users of our products and/or services. These testimonials reflect the real-
+        life experiences and opinions of such users. However, the experiences are personal to those particular users,
+        and may not necessarily be representative of all users of our products and/or services.
+        We do not claim, and you should not assume that all users will have the same experiences.\n
+        \n<b>YOUR INDIVIDUAL RESULTS MAY VARY</b>\n
+The testimonials on the Site are submitted in various forms such as text, audio and/or video, and are reviewed by us before being posted. They appear on the Site verbatim as given by the users, except for the correction of grammar or typing errors. Some testimonials may have been shortened for the sake of brevity, where the full testimonial contained extraneous information not relevant to the general public.
+The views and opinions contained in the testimonials belong solely to the individual user and do not reflect our views and opinions.\n
+        \n<b>ERRORS AND OMISSIONS DISCLAIMER</b>\n
+While we have made every attempt to ensure that the information contained in this site has been obtained from reliable sources, CLOUD 9 FASHION is not responsible for any errors or omissions or for the results obtained from the use of this information. All information in this site is provided “as is”, with no guarantee of completeness, accuracy, timeliness or of the results obtained from the use of this information, and without warranty of any kind, express or implied, including, but not limited to warranties of performance, merchantability, and fitness for a particular purpose.
+In no event will CLOUD 9 FASHION, its related partnerships or corporations, or the partners, agents or employees thereof
+        be liable to you or anyone else for any decision made or action taken in reliance on the information in this Site or
+        for any consequential, special or similar damages, even if advised of the possibility of such damages.\n
+        \n<b>GUEST CONTRIBUTORS DISCLAIMER</b>\n
+This Site may include content from guest contributors and any views or opinions expressed in such posts are personal
+        and do not represent those of CLOUD 9 FASHION or any of its staff or affiliates unless explicitly stated.\n
+        \n<b>LOGOS AND TRADEMARKS DISCLAIMER</b>\n
+Any inclusion of such trademarks or logos does not imply or constitute any approval, endorsement or
+        sponsorship of CLOUD 9 FASHION by such owners.\n
+        \n<b>CONTACT US</b>\n
+Should you have any feedback, comments, requests for technical support or other inquiries,
+        please contact us by email: paragshah0802@gmail.com.\n
+</string>
+
+    <string name="privacy_header">Privacy Policy</string>
+
+    <string name="privacy_content">
+        \n<b>INTRODUCTION</b>\n
+        Welcome to CLOUD 9 FASHION. CLOUD 9 FASHION (“us”, “we”, or “our”) operates on mobile app located on play-store
+        (hereinafter referred to as “Service”).
+        We use your data to provide and improve Service. By using Service,
+        you agree to the collection and use of information in accordance with this policy.
+        Unless otherwise defined in this Privacy Policy, the terms used in this Privacy
+        Policy have the same meanings as in our Terms and Conditions.
+        Our Terms and Conditions (“Terms”) govern all use of our Service and
+        together with the Privacy Policy constitute your agreement with us (“agreement”).\n
+
+        \n<b>DEFINITIONS</b>\n
+SERVICE operated by CLOUD 9 FASHION.
+PERSONAL DATA means data about a living individual who can be identified from those data (or from those and other
+        information either in our possession or likely to come into our possession).\n
+USAGE DATA is data collected automatically either generated by the use of Service or from Service infrastructure itself.\n
+COOKIES are small files stored on your device (computer or mobile device).\n
+DATA CONTROLLER means a natural or legal person who (either alone or jointly or in common with other persons)
+        determines the purposes for which and the manner in which any personal data are, or are to be,
+        processed. For the purpose of this Privacy Policy, we are a Data Controller of your data.\n
+DATA PROCESSORS (OR SERVICE PROVIDERS) means any natural or legal person who processes the data on behalf of the Data Controller.
+        We may use the services of various Service Providers in order to process your data more effectively.\n
+DATA SUBJECT is any living individual who is the subject of Personal Data.\n
+THE USER is the individual using our Service. The User corresponds to the Data Subject, who is the subject of Personal Data.\n
+
+        \n<b>INFORMATION COLLECTION AND USE</b>\n
+We collect several different types of information for various purposes to provide and improve our Service to you.\n
+
+        \n<b>TYPES OF DATA COLLECTED</b>
+Personal Data\n
+While using our Service, we may ask you to provide us with certain
+        personally identifiable information that can be used to contact or identify you (“Personal Data”).
+        Personally identifiable information may include, but is not limited to:\n
+Email address\n
+First name and last name\n
+Phone number\n
+Address, Country, State, Province, ZIP/Postal code, City\n
+Cookies and Usage Data\n
+We may use your Personal Data to contact you with newsletters, marketing or promotional
+        materials and other information that may be of interest to you.
+        You may opt out of receiving any, or all, of these communications from us by following the unsubscribe link.\n
+
+        \n<b>Usage Data</b>\n
+We may also collect information that your browser sends whenever you visit our Service or when you access
+        Service by or through any device (“Usage Data”).
+This Usage Data may include information such as your computer’s Internet Protocol address (e.g. IP address),
+        browser type, browser version, the pages of our Service that you visit, the time and date of your visit,
+        the time spent on those pages, unique device identifiers and other diagnostic data.
+When you access Service with a device, this Usage Data may include information such as the type of device you use,
+        your device unique ID, the IP address of your device, your device operating system,
+        the type of Internet browser you use, unique device identifiers and other diagnostic data.\n
+
+        \n<b>Location Data</b>\n
+We may use and store information about your location if you give us permission to do so (“Location Data”).
+        We use this data to provide features of our Service, to improve and customize our Service.
+You can enable or disable location services when you use our Service at any time by way of your device settings.\n
+
+        \n<b>Tracking Cookies Data</b>\n
+We use cookies and similar tracking technologies to track the activity on our Service and we hold certain information.
+Cookies are files with a small amount of data which may include an anonymous unique identifier.
+        Cookies are sent to your browser from a website and stored on your device.
+        Other trackingtechnologies are also used such as beacons, tags and scripts to collect and track information and
+        to improve and analyze our Service.
+You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.
+        However, if you do not accept cookies, you may not be able to use some portions of our Service.\n
+\nExamples of Cookies we use:\n
+•	Session Cookies: We use Session Cookies to operate our Service.\n
+•	Preference Cookies: We use Preference Cookies to remember your preferences and various settings.\n
+•	Security Cookies: We use Security Cookies for security purposes.\n
+•	Advertising Cookies: Advertising Cookies are used to serve you with advertisements that may be relevant to you and your interests.\n
+
+        \n<b>Other Data</b>\n
+While using our Service, we may also collect the following information: sex, age,
+        date of birth, place of birth, passport details, citizenship,
+        registration at place of residence and actual address,
+        telephone number (work, mobile), details of documents on education, qualification,
+        professional training, employment agreements, non-disclosure agreements,
+        information on bonuses and compensation, information on marital status, family members,
+        social security (or other taxpayer identification) number, office location and other data.\n
+
+\n<b>USE OF DATA</b>\n
+CLOUD 9 FASHION uses the collected data for various purposes:\n
+to provide and maintain our Service\n
+to notify you about changes to our Service\n
+to allow you to participate in interactive features of our Service when you choose to do so\n
+to provide customer support\n
+to gather analysis or valuable information so that we can improve our Service\n
+to monitor the usage of our Service\n
+to detect, prevent and address technical issues\n
+to fulfil any other purpose for which you provide it\n
+to carry out our obligations and enforce our rights arising from any
+        contracts entered into between you and us, including for billing and collection\n
+to provide you with notices about your account and/or subscription, including expiration
+        and renewal notices, email-instructions, etc.\n
+to provide you with news, special offers and general information about other goods,
+        services and events which we offer that are similar to those that you have already
+        purchased or enquired about unless you have opted not to receive such information in
+        any other way we may describe when you provide the information for any other purpose with your consent.\n
+
+        \n<b>RETENTION OF DATA</b>\n
+We will retain your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy.
+        We will retain and use your Personal Data to the extent necessary to comply with our legal obligations
+        (for example, if we are required to retain your data to comply with applicable laws),
+        resolve disputes, and enforce our legal agreements and policies.\n
+We will also retain Usage Data for internal analysis purposes.
+        Usage Data is generally retained for a shorter period, except when
+        this data is used to strengthen the security or to improve the functionality of our Service,
+        or we are legally obligated to retain this data for longer time periods.\n
+
+        \n<b>TRANSFER OF DATA</b>\n
+Your information, including Personal Data, may be transferred to – and maintained on – computers located outside of your state, province, country or other governmental jurisdiction where the data protection laws may differ from those of your jurisdiction.
+If you are located outside India and choose to provide information to us, please note that we transfer the data, including Personal Data, to India and process it there.
+Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer.
+CLOUD 9 FASHION will take all the steps reasonably necessary to ensure that your data is
+        treated securely and in accordance with this Privacy Policy and no transfer of your
+        Personal Data will take place to an organization or a country unless there are adequate
+        controls in place including the security of your data and other personal information.\n
+
+
+\n<b>DISCLOSURE OF DATA</b>\n
+We may disclose personal information that we collect, or you provide:\n
+Disclosure for Law Enforcement.\n
+Under certain circumstances, we may be required to disclose your Personal Data if required to do so by law or
+        in response to valid requests by public authorities.\n
+Business Transaction.\n
+If we or our subsidiaries are involved in a merger, acquisition or asset sale, your Personal Data may be transferred.
+Other cases. We may disclose your information also:\n
+•	to our subsidiaries and affiliates\n
+•	to contractors, service providers, and other third parties we use to support our business\n
+•	to fulfill the purpose for which you provide it\n
+•	for the purpose of including your company’s logo on our website\n
+•	for any other purpose disclosed by us when you provide the information\n
+•	with your consent in any other cases\n
+•	if we believe disclosure is necessary or appropriate to protect the rights, property, or safety of the Company,
+        our customers, or others.\n
+
+        \n<b>SECURITY OF DATA</b>\n
+The security of your data is important to us but remember that no method of
+        transmission over the Internet or method of electronic storage is 100% secure.
+        While we strive to use commercially acceptable means to protect your
+        Personal Data, we cannot guarantee its absolute security.\n
+
+
+\n<b>SERVICE PROVIDERS</b>\n
+We may employ third party companies and individuals to facilitate our Service (“Service Providers”),
+        provide Service on our behalf, perform Service-related services or assist us in analysing how our Service is used.\n
+These third parties have access to your Personal Data only to perform these tasks on our behalf and are obligated not to
+        disclose or use it for any other purpose.\n
+
+
+\n<b>ANALYTICS</b>\n
+We may use third-party Service Providers to monitor and analyze the use of our Service.\n
+
+
+\n<b>CI/CD TOOLS</b>\n
+We may use third-party Service Providers to automate the development process of our Service.\n
+
+
+\n<b>ADVERTISING</b>\n
+We may use third-party Service Providers to show advertisements to you to help support and maintain our Service.\n
+
+
+\n<b>BEHAVIORAL REMARKETING</b>\n
+We may use remarketing services to advertise on third party websites to you after you visited our Service.
+        We and our third-party vendors use cookies to inform, optimise and serve ads based on your past visits to our Service.\n
+
+
+\n<b>PAYMENTS</b>\n
+We may provide paid products and/or services within Service. In that case, we use third-party services for payment processing
+        (e.g. payment processors).\n
+We will not store or collect your payment card details. That information is provided directly to our
+        third-party payment processors whose use of your personal information is governed by their Privacy Policy.
+        These payment processors adhere to the standards set by PCI-DSS as managed by the PCI Security
+        Standards Council, which is a joint effort of brands like Visa, Mastercard, American Express and Discover.
+        PCI-DSS requirements help ensure the secure handling of payment information.\n
+
+
+\n<b>LINKS TO OTHER SITES</b>\n
+Our Service may contain links to other sites that are not operated by us.
+        If you click a third party link, you will be directed to that third party’s site. We strongly advise you to review the Privacy Policy of every site you visit.
+We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.
+For example, the outlined Privacy Policy has been made using PolicyMaker.io,
+        free tool that helps create high-quality legal documents. PolicyMaker’s free online
+        privacy policy generator is an easy-to-use tool for creating a privacy policy for a website, blog, e-commerce store or app.\n
+
+
+\n<b>CHILDREN’S PRIVACY</b>\n
+Our Services are not intended for use by children under the age of 18 (“Child” or “Children”).
+We do not knowingly collect personally identifiable information from Children under 18. If you become
+        aware that a Child has provided us with Personal Data, please contact us.
+        If we become aware that we have collected Personal Data from Children without verification of parental consent,
+        we take steps to remove that information from our servers.\n
+
+
+\n<b>CHANGES TO THIS PRIVACY POLICY</b>\n
+We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.
+We will let you know via email and/or a prominent notice on our Service, prior to the change becoming effective and update “effective date” at the top of this Privacy Policy.
+You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are
+        effective when they are posted on this page.\n
+
+
+\n<b>CONTACT US</b>\n
+If you have any questions about this Privacy Policy, please contact us by email: paragshah0802@gmail.com.\n
+</string>
+
+    <string name="shipping_header">Shipping, Cancellation and Refund</string>
+    <string name="shipping_content">
+
+        \n<b>SHIPPING POLICY</b>\n
+100% of orders are shipped within one business day.
+        Orders placed over the weekend are dispatched on Mondays.
+\n
+
+\n<b>CANCELLATION POLICY</b>\n
+Cancellation will be accepted within 24 hours from the date of order.\n
+
+ \n<b>REFUNDS POLICY</b>\n
+Any returned item must be in its original condition, and all tags need to be intact.
+Once your return is received and inspected, we will notify you of the approval or rejection of your refund.
+If you are approved, then your refund will be processed, and a credit will automatically be applied to your
+credit card or original method of payment, within a certain amount of days. Please allow for a period of up to
+14 days for us to process the refund.\n
+
+
+        \n<b>CONTACT US</b>\n
+Please send your feedback, comments, and requests for technical support by email: paragshah0802@gmail.com.\n
+    </string>
+
+    <string name="terms_header">Terms and Condition</string>
+    <string name="terms_content">
+       \n<b>INTRODUCTION</b>\n
+Welcome to CLOUD 9 FASHION (“Company”, “we”, “our”, “us”)!
+These Terms of Service (“Terms”, “Terms of Service”) govern use of our mobile app operated by CLOUD 9 FASHION.
+Our Privacy Policy also governs your use of our Service and explains how we collect, safeguard and disclose information that results from your use of our web pages.
+Your agreement with us includes these Terms and our Privacy Policy (“Agreements”). You acknowledge that you have read and understood Agreements, and agree to be bound of them.
+If you do not agree with (or cannot comply with) Agreements, then you may not use the Service,
+        but please let us know by emailing at paragshah0802@gmail.com so we can try to find a solution.
+        These Terms apply to all visitors, users and others who wish to access or use Service.\n
+
+\n<b>COMMUNICATIONS</b>\n
+By using our Service, you agree to subscribe to newsletters, marketing or
+        promotional materials and other information we may send. However, you may opt out of receiving any, or all,
+        of these communications from us by following the unsubscribe link or by emailing at paragshah0802@gmail.com.\n
+
+\n<b>PURCHASES</b>\n
+If you wish to purchase any product or service made available through Service (“Purchase”),
+        you may be asked to supply certain information relevant to your Purchase including but not limited to,
+        your credit or debit card number, the expiration date of your card, your billing address, and your shipping information.\n
+You represent and warrant that: (i) you have the legal right to use any card(s) or other payment method(s) in connection with any Purchase; and that (ii) the information you supply to us is true, correct and complete.
+We may employ the use of third party services for the purpose of facilitating payment and the completion of Purchases. By submitting your information, you grant us the right to provide the information to these third parties subject to our Privacy Policy.
+We reserve the right to refuse or cancel your order at any time for reasons including but not limited to:
+        product or service availability, errors in the description or price of the product or service,
+        error in your order or other reasons.
+We reserve the right to refuse or cancel your order if fraud or an unauthorized or illegal transaction is suspected.\n
+
+\n<b>CONTESTS, SWEEPSTAKES AND PROMOTIONS</b>\n
+Any contests, sweepstakes or other promotions (collectively, “Promotions”)
+        made available through Service may be governed by rules that are separate from these Terms of Service.
+        If you participate in any Promotions, please review the applicable rules as well as our Privacy Policy.
+        If the rules for a Promotion conflict with these Terms of Service, Promotion rules will apply.\n
+
+
+\n<b>CONTENT</b>\n
+Our Service allows you to post, link, store, share and otherwise make available certain information, text, graphics, videos, or other material (“Content”). You are responsible for Content that you post on or through Service, including its legality, reliability, and appropriateness.
+By posting Content on or through Service, You represent and warrant that: (i) Content is yours (you own it) and/or you have the right to use it and the right to grant us the rights and license as provided in these Terms, and (ii) that the posting of your Content on or through Service does not violate the privacy rights, publicity rights, copyrights, contract rights or any other rights of any person or entity. We reserve the right to terminate the account of anyone found to be infringing on a copyright.
+You retain any and all of your rights to any Content you submit, post or display on or through Service and you are responsible for protecting those rights. We take no responsibility and assume no liability for Content you or any third party posts on or through Service. However, by posting Content using Service you grant us the right and license to use, modify, publicly perform, publicly display, reproduce, and distribute such Content on and through Service. You agree that this license includes the right for us to make your Content available to other users of Service, who may also use your Content subject to these Terms.
+CLOUD 9 FASHION has the right but not the obligation to monitor and edit all Content provided by users.
+In addition, Content found on or through this Service are the property of CLOUD 9 FASHION or used with permission.
+        You may not distribute, modify, transmit, reuse, download, repost, copy, or use said Content, whether in whole or in part,
+        for commercial purposes or for personal gain, without express advance written permission from us.\n
+
+\n<b>PROHIBITED USES</b>\n
+You may use Service only for lawful purposes and in accordance with Terms. You agree not to use Service:
+•	In any way that violates any applicable national or international law or regulation.
+•	For the purpose of exploiting, harming, or attempting to exploit or
+        harm minors in any way by exposing them to inappropriate content or otherwise.
+•	To transmit, or procure the sending of, any advertising or promotional material, including any “junk mail”, “chain letter,” “spam,” or any other similar solicitation.
+•	To impersonate or attempt to impersonate Company, a Company employee, another user, or any other person or entity.
+•	In any way that infringes upon the rights of others, or in any way is illegal, threatening, fraudulent, or harmful, or in connection with any unlawful, illegal, fraudulent, or harmful purpose or activity.
+•	To engage in any other conduct that restricts or inhibits anyone’s use or enjoyment of Service, or which,
+        as determined by us, may harm or offend Company or users of Service or expose them to liability.\n
+
+        \n<b>Additionally, you agree not to:</b>\n
+•	Use Service in any manner that could disable, overburden, damage, or impair Service or interfere with any other party’s use of Service, including their ability to engage in real time activities through Service.
+•	Use any robot, spider, or other automatic device, process, or means to access Service for any purpose, including monitoring or copying any of the material on Service.
+•	Use any manual process to monitor or copy any of the material on Service or for any other unauthorized purpose without our prior written consent.
+•	Use any device, software, or routine that interferes with the proper working of Service.
+•	Introduce any viruses, trojan horses, worms, logic bombs, or other material which is malicious or technologically harmful.
+•	Attempt to gain unauthorized access to, interfere with, damage, or disrupt any parts of Service, the server on which Service is stored, or any server, computer, or database connected to Service.
+•	Attack Service via a denial-of-service attack or a distributed denial-of-service attack.
+•	Take any action that may damage or falsify Company rating.
+•	Otherwise attempt to interfere with the proper working of Service.\n
+
+\n<b>ANALYTICS</b>\n
+We may use third-party Service Providers to monitor and analyze the use of our Service.\n
+
+\n<b>NO USE BY MINORS</b>\n
+Service is intended only for access and use by individuals at least eighteen (18)
+        years old. By accessing or using Service, you warrant and represent that you are at least eighteen (18)
+        years of age and with the full authority, right, and capacity to enter into this agreement and abide by all
+        of the terms and conditions of Terms. If you are not at least eighteen (18) years old, you are prohibited from
+        both the access and usage of Service.\n
+
+\n<b>ACCOUNTS</b>\n
+When you create an account with us, you guarantee that you are above the age of 18, and that the information you provide us is accurate, complete, and current at all times. Inaccurate, incomplete, or obsolete information may result in the immediate termination of your account on Service.
+You are responsible for maintaining the confidentiality of your account and password, including but not limited to the restriction of access to your computer and/or account. You agree to accept responsibility for any and all activities or actions that occur under your account and/or password, whether your password is with our Service or a third-party service. You must notify us immediately upon becoming aware of any breach of security or unauthorized use of your account.
+You may not use as a username the name of another person or entity or that is not lawfully available for use, a name or trademark that is subject to any rights of another person or entity other than you, without appropriate authorization. You may not use as a username any name that is offensive, vulgar or obscene.
+We reserve the right to refuse service, terminate accounts, remove or edit content, or cancel orders in our sole discretion.\n
+
+\n<b>INTELLECTUAL PROPERTY</b>\n
+Service and its original content (excluding Content provided by users), features and functionality are and will remain
+        the exclusive property of CLOUD 9 FASHION and its licensors. Service is protected by copyright, trademark,
+        and other laws of and foreign countries. Our trademarks may not be used in connection with any product or service
+        without the prior written consent of CLOUD 9 FASHION.\n
+
+\n<b>COPYRIGHT POLICY</b>\n
+We respect the intellectual property rights of others. It is our policy to respond to any claim that Content posted on Service infringes on the copyright or other intellectual property rights (“Infringement”) of any person or entity.
+If you are a copyright owner, or authorized on behalf of one, and you believe that the copyrighted work has been copied in a way that constitutes copyright infringement, please submit your claim via email to paragshah0802@gmail.com, with the subject line: “Copyright Infringement” and include in your claim a detailed description of the alleged Infringement as detailed below, under “DMCA Notice and Procedure for Copyright Infringement Claims”
+You may be held accountable for damages (including costs and attorneys’ fees) for misrepresentation or
+        bad-faith claims on the infringement of any Content found on and/or through Service on your copyright.\n
+
+\n<b>DMCA NOTICE AND PROCEDURE FOR COPYRIGHT INFRINGEMENT CLAIMS</b>\n
+You may submit a notification pursuant to the Digital Millennium Copyright Act (DMCA) by providing our Copyright Agent with the following information in writing (see 17 U.S.C 512©(3) for further detail):
+•	an electronic or physical signature of the person authorized to act on behalf of the owner of the copyrights interest.\n
+•	a description of the copyrighted work that you claim has been infringed, including the URL (i.e., web page address) of the location where the copyrighted work exists or a copy of the copyrighted work\n
+•	identification of the URL or other specific location on Service where the material that you claim is infringing is located\n
+•	your address, telephone number, and email address\n
+•	a statement by you that you have a good faith belief that the disputed use is not authorized by the copyright owner, its agent, or the law\n
+	a statement by you, made under penalty of perjury, that the above information in your notice is accurate and that you are the copyright owner or authorized to act on the copyright owners behalf.\n
+You can contact our Copyright Agent via email at paragshah0802@gmail.com.\n
+
+
+\n<b>ERROR REPORTING AND FEEDBACK</b>\n
+You may provide us either directly at paragshah0802@gmail.com or
+        via third party sites and tools with information and feedback concerning errors,
+        suggestions for improvements, ideas, problems, complaints, and other matters related to our Service (“Feedback”).
+        You acknowledge and agree that: (i) you shall not retain, acquire or assert any intellectual property right or other right,
+        title or interest in or to the Feedback; (ii) Company may have development ideas similar to the Feedback; (iii)
+        Feedback does not contain confidential information or proprietary information from you or any third party; and (iv)
+        Company is not under any obligation of confidentiality with respect to the Feedback. In the event the transfer of the
+        ownership to the Feedback is not possible due to applicable mandatory laws, you grant Company and its affiliates an
+        exclusive, transferable, irrevocable, free-of-charge, sub-licensable, unlimited and perpetual right to use
+        (including copy, modify, create derivative works, publish, distribute and commercialize) Feedback in any
+        manner and for any purpose.\n
+
+\n<b>LINKS TO OTHER WEB SITES</b>\n
+Our Service may contain links to third party web sites or services that are not owned or controlled by CLOUD 9 FASHION.
+CLOUD 9 FASHION has no control over, and assumes no responsibility for the content, privacy policies, or practices of any third party web sites or services. We do not warrant the offerings of any of these entities/individuals or their websites.
+For example, the outlined Terms of Service have been created using PolicyMaker.io, a free web application for generating high-quality legal documents. PolicyMaker’s free Terms and Conditions generator is an easy-to-use free tool for creating an excellent standard Terms of Service template for a website, blog, e-commerce store or app.
+YOU ACKNOWLEDGE AND AGREE THAT COMPANY SHALL NOT BE RESPONSIBLE OR LIABLE, DIRECTLY OR INDIRECTLY, FOR ANY DAMAGE OR LOSS CAUSED OR ALLEGED TO BE CAUSED BY OR IN CONNECTION WITH USE OF OR RELIANCE ON ANY SUCH CONTENT, GOODS OR SERVICES AVAILABLE ON OR THROUGH ANY SUCH THIRD PARTY WEB SITES OR SERVICES.
+WE STRONGLY ADVISE YOU TO READ THE TERMS OF SERVICE AND PRIVACY POLICIES OF ANY THIRD PARTY WEB SITES OR SERVICES THAT YOU VISIT.\n
+
+\n<b>DISCLAIMER OF WARRANTY</b>\n
+These services are provided by company on an “as is” and “as available” basis. Company makes no representations or warranties of any kind, express or implied, as to the operation of their services, or the information, content or materials included therein. You expressly agree that your use of these services, their content, and any services or items obtained from us is at your sole risk.
+Neither company nor any person associated with company makes any warranty or representation with respect to the completeness, security, reliability, quality, accuracy, or availability of the services. Without limiting the foregoing, neither company nor anyone associated with company represents or warrants that the services, their content, or any services or items obtained through the services will be accurate, reliable, error-free, or uninterrupted, that defects will be corrected, that the services or the server that makes it available are free of viruses or other harmful components or that the services or any services or items obtained through the services will otherwise meet your needs or expectations.
+Company hereby disclaims all warranties of any kind, whether express or implied, statutory, or otherwise, including but not limited to any warranties of merchantability, non-infringement, and fitness for particular purpose.
+The foregoing does not affect any warranties which cannot be excluded or limited under applicable law.\n
+
+\n<b>LIMITATION OF LIABILITY</b>\n
+Except as prohibited by law, you will hold us and our officers, directors, employees, and
+        agents harmless for any indirect, punitive, special, incidental, or consequential damage,
+        however it arises (including attorneys’ fees and all related costs and expenses of litigation
+        and arbitration, or at trial or on appeal, if any, whether or not litigation or arbitration is
+        instituted), whether in an action of contract, negligence, or other tortious action, or arising
+        out of or in connection with this agreement, including without limitation any claim for personal
+        injury or property damage, arising from this agreement and any violation by you of any federal,
+        state, or local laws, statutes, rules, or regulations, even if company has been previously advised
+        of the possibility of such damage. Except as prohibited by law, if there is liability found on the
+        part of company, it will be limited to the amount paid for the products and/or services, and under no
+        circumstances will there be consequential or punitive damages. Some states do not allow the exclusion or
+        limitation of punitive, incidental or consequential damages, so the prior limitation or exclusion may not apply to you.\n
+
+\n<b>TERMINATION</b>\n
+We may terminate or suspend your account and bar access to Service immediately, without prior notice or liability, under our sole discretion, for any reason whatsoever and without limitation, including but not limited to a breach of Terms.
+If you wish to terminate your account, you may simply discontinue using Service.
+All provisions of Terms which by their nature should survive termination shall survive termination, including,
+        without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.\n
+
+\n<b>GOVERNING LAW</b>\n
+These Terms shall be governed and construed in accordance with the laws of India, which governing law applies to agreement without regard to its conflict of law provisions.
+Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights.
+        If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of
+        these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our Service
+        and supersede and replace any prior agreements we might have had between us regarding Service.\n
+
+\n<b>CHANGES TO SERVICE</b>\n
+We reserve the right to withdraw or amend our Service, and any service or material we provide via Service,
+        in our sole discretion without notice. We will not be liable if for any reason all or any part of Service is
+        unavailable at any time or for any period. From time to time, we may restrict access to some parts of Service,
+        or the entire Service, to users, including registered users.\n
+
+\n<b>AMENDMENTS TO TERMS</b>\n
+We may amend Terms at any time by posting the amended terms on this site. It is your responsibility to review these Terms periodically.
+Your continued use of the Platform following the posting of revised Terms means that you accept and agree to the changes. You are expected to check this page frequently so you are aware of any changes, as they are binding on you.
+By continuing to access or use our Service after any revisions become effective, you agree to be bound by the revised terms.
+        If you do not agree to the new terms, you are no longer authorized to use Service.\n
+
+\n<b>WAIVER AND SEVERABILITY</b>\n
+No waiver by Company of any term or condition set forth in Terms shall be deemed a further or continuing waiver of such term or condition or a waiver of any other term or condition, and any failure of Company to assert a right or provision under Terms shall not constitute a waiver of such right or provision.
+If any provision of Terms is held by a court or other tribunal of competent jurisdiction to be invalid,
+        illegal or unenforceable for any reason, such provision shall be eliminated or limited to the
+        minimum extent such that the remaining provisions of Terms will continue in full force and effect.\n
+
+\n<b>ACKNOWLEDGEMENT</b>\n
+By using service or other services provided by us, you acknowledge that you have read these terms of
+        service and agree to be bound by them.\n
+
+\n<b>CONTACT US</b>\n
+Please send your feedback, comments, and requests for technical support by email: paragshah0802@gmail.com.\n
+</string>
+    <string name="menu_policy">Policy</string>
 
 
 </resources>

@@ -3,12 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/drawable-ldpi/button_border_line.xml" value="0.2890625" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/drawable-xhdpi/border_animation.xml" value="0.24722222222222223" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/drawable-xhdpi/ic_share.xml" value="0.23" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/drawable/address_card_edge.xml" value="0.2712962962962963" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/drawable/blackborder.xml" value="0.24722222222222223" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/drawable/border_line.xml" value="0.2890625" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/drawable/ic_baseline_calendar_today_24.xml" value="0.23" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/drawable/ic_baseline_company_24.xml" value="0.22592592592592592" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.22592592592592592" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/drawable/ic_baseline_error_outline_24.xml" value="0.2890625" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/drawable/ic_baseline_mic_none_24.xml" value="0.24722222222222223" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/drawable/ic_baseline_mobile_friendly_24.xml" value="0.22592592592592592" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/drawable/ic_baseline_more.xml" value="0.23" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.2890625" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/drawable/linearlayout_card_effect.xml" value="0.24722222222222223" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/drawable/progress_animation.xml" value="0.24722222222222223" />
@@ -18,40 +25,90 @@
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/activity_address_delivery.xml" value="0.22037037037037038" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/activity_cart.xml" value="0.2205746061167748" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/activity_confirm_password.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/activity_customer_leger.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/activity_details_order.xml" value="0.33" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/activity_filter.xml" value="0.27291666666666664" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/activity_forgot_password.xml" value="0.27291666666666664" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/activity_global_search.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/activity_invoice.xml" value="0.27291666666666664" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/activity_main.xml" value="0.19444444444444445" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/activity_order_data.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/activity_order_details.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/activity_p_d_f.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/activity_payment.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/activity_payment_success.xml" value="0.27291666666666664" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/activity_product.xml" value="0.25" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/activity_product_image.xml" value="0.27291666666666664" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/activity_registration.xml" value="0.18333333333333332" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/activity_search.xml" value="0.2" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/activity_search_product.xml" value="0.27291666666666664" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/activity_splash_screen.xml" value="0.33" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/activity_sub_category.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/activity_terms.xml" value="0.26871794871794874" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/activity_terms_details.xml" value="0.27291666666666664" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/activity_verify.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/add_deliveryaddr_dialog.xml" value="0.27291666666666664" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/app_bar_main.xml" value="0.19444444444444445" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/badge_icon_layout.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/barcode_scanner_dialog.xml" value="0.27291666666666664" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/bottom_sheet_product_filter.xml" value="0.27291666666666664" />
-        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/cart_adapter_layout.xml" value="0.22314814814814815" />
-        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/category_adpter_layout.xml" value="0.175" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/cart_adapter_layout.xml" value="0.33" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/category_adpter_layout.xml" value="0.22" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/content_main.xml" value="0.19444444444444445" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/custom_cityspinner_items.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/custom_countryspinner_items.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/custom_customerspinner_items.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/custom_spinner_item.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/custom_statespinner_items.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/delete_delivery_address_dialog.xml" value="0.21666666666666667" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/delivery_address.xml" value="0.1712962962962963" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/edit_delivery_address_dialog.xml" value="0.27291666666666664" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/fragment_bank_billing.xml" value="0.25" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/fragment_customer_ledger.xml" value="0.27291666666666664" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/fragment_delivery_address.xml" value="0.22314814814814815" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/fragment_invoice.xml" value="0.27291666666666664" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/fragment_order_status.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/fragment_slideshow.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/layout_product_viewpager.xml" value="0.27291666666666664" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/logout_bottom_sheet.xml" value="0.25" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/merchant_activity_checkout.xml" value="0.27291666666666664" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/nav_header_main.xml" value="0.20185185185185187" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/notification_adapter_layout.xml" value="0.27291666666666664" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/order_details_adpter_layout.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/order_details_item.xml" value="0.27291666666666664" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/order_invoice_adapter.xml" value="0.33" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/order_invoice_item_layout.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/orderdata_adpter_layout.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/payment_info_dialog.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/paynimo_activity_payment.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/paynimo_dialog_two_button.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/paynimo_dialog_vault_card.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/paynimo_listitem_custom_header.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/paynimo_loader.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/paynimo_spinner_bank_row.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/paynimo_upi_grid_single.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/paynimo_upi_list_row.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/placecart_adapter_layout.xml" value="0.27291666666666664" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/product_adpter_layout.xml" value="0.22" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/product_adpter_layout_backup.xml" value="0.27291666666666664" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/product_images_bottom_sheet.xml" value="0.27291666666666664" />
-        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/sub_category_adpter_layout.xml" value="0.175" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/row_home_grid.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/sale_return_adapter.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/sale_return_item_layout.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/sample.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/sub_category_adpter_layout.xml" value="0.25" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/sub_categorylist_adpter_layout.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/success_alert.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/success_error_alert.xml" value="0.27291666666666664" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/switch_layout.xml" value="0.27291666666666664" />
-        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/menu/activity_main_drawer.xml" value="0.5" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/layout/term_adapter_layout.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/menu/activity_main_drawer.xml" value="0.25" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/menu/main.xml" value="0.27291666666666664" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/menu/menu_clothes_cart.xml" value="0.175" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/menu/menu_credit_days.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/ForlemPopoli/app/src/main/res/menu/menu_download.xml" value="0.27291666666666664" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/menu/menu_search.xml" value="0.27291666666666664" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/menu/menu_share.xml" value="0.27291666666666664" />
         <entry key="..\:/Android/ForlemPopoli/app/src/main/res/menu/menu_sort.xml" value="0.27291666666666664" />

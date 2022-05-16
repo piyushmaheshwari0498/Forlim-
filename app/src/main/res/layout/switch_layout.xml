@@ -4,12 +4,13 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
+
     <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/switchAB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:checked="true"
 
-        android:theme="@style/Color1SwitchStyle"/>
+        android:theme="@style/Color1SwitchStyle" />
    <!-- android:checked="true"-->
 </RelativeLayout>

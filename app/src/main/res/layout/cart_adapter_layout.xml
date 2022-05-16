@@ -38,9 +38,9 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
@@ -55,24 +55,38 @@
                 <TextView
                     android:id="@+id/tvName1"
                     style="@style/BigTextView"
-                    android:padding="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="start"
-                    android:text="Product Name"
+                    android:padding="5dp"
                     android:textSize="16sp" />
 
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
                 <TextView
                     android:id="@+id/tvRate"
-                    android:layout_width="wrap_content"
+                    style="@style/PaddingMediumTextView"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:gravity="right"
+                    android:gravity="start"
                     android:padding="5dp"
-                    android:text="@string/rs_398"
                     android:textSize="16sp"
-                    android:textStyle="bold"
-                    style="@style/PaddingMediumTextView"/>
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvwidth"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="" />
+                </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/ll_cgst"
@@ -188,7 +202,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="right"
-                        android:text="@string/rs_899"
+
                         android:textSize="15sp" />
                 </LinearLayout>
 
@@ -209,53 +223,94 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
+
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:orientation="horizontal">
+                android:orientation="vertical">
 
-               <!-- <TextView
-                    android:id="@+id/tvQuantityMeter"
-                    style="@style/PaddingMediumTextView"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="@string/mtr" />-->
-
-                <ImageView
-                    android:id="@+id/cart_mtr_delete"
+                <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:visibility="gone"
-                    android:src="@drawable/ic_delete_24" />
-
-                <ImageView
-                    android:id="@+id/cart_mtr_decrement"
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:src="@drawable/ic_minus" />
-
-                <TextView
-                    style="@style/BigTextView"
-                    android:id="@+id/cart_mtr_product_quantity_tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:padding="5dp"
-                    android:text="1.20"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:orientation="horizontal">
 
-                <ImageView
-                    android:id="@+id/cart_mtr_increment"
+                    <!-- <TextView
+                         android:id="@+id/tvQuantityMeter"
+                         style="@style/PaddingMediumTextView"
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1"
+                         android:text="@string/mtr" />-->
+
+                    <ImageView
+                        android:id="@+id/cart_mtr_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_delete_24"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/cart_mtr_decrement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_minus" />
+
+                    <!--<TextView
+                        style="@style/BigTextView"
+                        android:id="@+id/cart_mtr_product_quantity_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="1.20"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />-->
+
+                    <EditText
+                        android:id="@+id/cart_mtr_product_quantity_tv"
+                        style="@style/BigTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxLength="5"
+                        android:maxLines="1"
+                        android:padding="5dp"
+                        android:text=""
+                        android:imeOptions="flagNoExtractUi|actionGo"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/cart_mtr_increment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_plus" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_submitqty"
                     android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:src="@drawable/ic_plus" />
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_qtysubmit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="Submit"
+                        android:textColor="@color/white" />
+                </LinearLayout>
             </LinearLayout>
             <!-- <View
                  android:layout_width="2dp"
@@ -282,10 +337,10 @@
                  android:text="@string/remove" />
     -->
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_gravity="center"
+                android:layout_weight="1"
                 android:gravity="center">
 
                 <com.google.android.material.button.MaterialButton
@@ -293,9 +348,8 @@
                     style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAllCaps="false"
                     android:text="@string/remove"
-                    />
+                    android:textAllCaps="false" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

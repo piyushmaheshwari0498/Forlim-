@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Activity.OrderDetailsActivity"
     android:orientation="vertical">
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/orderDetails_rV"
         android:layout_width="match_parent"

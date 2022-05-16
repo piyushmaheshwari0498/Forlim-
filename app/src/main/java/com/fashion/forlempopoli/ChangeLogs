@@ -1,0 +1,49 @@
+Forlim Popoli
+
+v1.5
+- Bug in calculation, Customer Credit limit is not getting subtracted when order gets confired
+- Bug in calculation, Customer Credit Limit is not getting added when their Sale return
+- Profile UI is not still proper Compnay Name is small, No icons should be large text of company
+- Invoice no is getting fetch but Order no is not getting fetch in Invoice Page
+- Inovice PDF their no order number for refrence purpose
+- Sale return rate is getting fetch wrong, it should fetch fetch as per the product offer price / selling price
+- Reports are getting not proper, need to change API as per the new requierment
+
+v1.6
+- Bug fix for Home page Credit Balance
+- Showing Proper Pending Balance Payable Balance
+
+v1.7
+- Barcode Scanner in global search.
+
+v1.8
+- Barcode Dialog getting Dismiss after getting scanned
+
+v1.9 (5/01/2022)
+- Product Searching and add to to cart is done.
+
+v1.10 (7/01/2022)
+-  Stock is now showed whike searching if it's in stock or not.
+-  Now in cart quatity is editable
+
+v2.0 (10/01/2022)
+-  Loader have been changed
+-  Image is been showed while searching products
+
+v2.1 (20/01/2022)
+-  Removed offer price condition from whole app.
+
+v2.2 (22/01/2022)
+-  Removed restriction from minimum order from cart and adding to cart option.
+-  Added Payment Details alert on Home Page
+-----New Point------
+*  To be added Pdf Sharing module
+*  To be change flow of order placing i.e payment gateway to be shown after placing order.
+    Stock to be updated after successfully placing order.
+
+v2.3 (22/01/2021)
+-  New Payment fow Ui done
+*  Just have change api as per new requirement and change code accordingly
+v2.4 for playstore
+v2.5 (11/05/2022)
+-  NEW Shipping,Refund and Cancellation policy add

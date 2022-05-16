@@ -4,7 +4,7 @@
     android:inset="40%"
     tools:targetApi="lollipop">
 <animated-rotate
-    android:drawable="@drawable/loader_1"
+    android:drawable="@drawable/forlim_loader"
     android:pivotX="50%"
     android:pivotY="50%"
     />

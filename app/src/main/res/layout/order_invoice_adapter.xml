@@ -29,18 +29,16 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.2"
                 android:text="@string/invoice_no"
                 android:padding="5dp"
                 android:textSize="18sp"
                 style="@style/TitleTextView" />
             <TextView
                 android:id="@+id/tv_order_id"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="0.5"
                 android:textSize="18sp"
                 style="@style/PaddingTitleTextView"/>
         </LinearLayout>
@@ -191,8 +189,12 @@
             android:layout_height="15dp"/>
         <RelativeLayout
             android:id="@+id/rr3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@drawable/button_border_line">
             <ImageView
                 android:id="@+id/download_invoice"
                 android:layout_width="25dp"
@@ -217,12 +219,15 @@
                 android:layout_height="wrap_content"
                 android:layout_toLeftOf="@id/arrow_btn"
                 android:background="@drawable/corner"
-                android:text="@string/pay_now" />
+                android:text="@string/pay_now"
+                android:visibility="gone"/>
+
             <ImageView
                 android:id="@+id/arrow_btn"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_alignParentRight="true"
+                android:visibility="gone"
                 android:background="@drawable/ic_baseline_keyboard_arrow_right_24" />
         </RelativeLayout>
         <View

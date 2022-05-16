@@ -30,4 +30,6 @@
   <color name="lavenderblush">#C7C6F1</color>
 
   <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#FFFFFF</color>
+    <color name="info">#5DBCD2</color>
+  <color name="bg">#3E80B4</color>
 </resources>
