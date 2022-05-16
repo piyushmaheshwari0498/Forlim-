@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "827497480545",
+    "project_id": "forlem-popoli",
+    "storage_bucket": "forlem-popoli.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827497480545:android:74ed7de576fde17b1e4520",
+        "android_client_info": {
+          "package_name": "com.fashion.forlempopoli"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "827497480545-8joh7fanjhcm41b9ng48m8f68a9s1km3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBorBsXQ9NZFfzTIWqc4Qt93SMZzTfnJl4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "827497480545-8joh7fanjhcm41b9ng48m8f68a9s1km3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
